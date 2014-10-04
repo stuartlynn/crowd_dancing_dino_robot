@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Robot Dancing</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <style media="screen">
+      .slide_cont{
+        border: 1px solid black;
+        width: 500px;
+        height: 30px;
+        position:relative;
+      }
+      .slide_cont .slider{
+        width: 5px;
+        height: 30px;
+        position: absolute;
+        left: 0px;
+        background-color: red;
+        transition: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Robot@@@@@</h1>
+    <script src="lib/app.js"></script>
+    <h1> you </h1>
+    <div id='data'>
+      <div class='slide_cont' id="xViz"></div>
+      <div class='slide_cont' id="yViz"></div>
+      <div class='slide_cont' id="zViz"></div>
+    </div>
+
+    <h1>Everyone</h1>
+    <div id="aggdata">
+      <div class='slide_cont' id="xaggViz"></div>
+      <div class='slide_cont' id="yaggViz"></div>
+      <div class='slide_cont' id="zaggViz"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "crowd_dance_robot",
+  "version": "0.0.1",
+  "dependencies": {
+    "express" : "*",
+    "coffee-script" : "*",
+    "socket.io" : "*",
+    "node-sphero": "*"
+  },
+  "scripts": {
+    "start": "coffee server.coffee",
+    "build": "coffee server.coffee; coffee -cw -o public/lib public/src/app.coffee"
+  }
+}
