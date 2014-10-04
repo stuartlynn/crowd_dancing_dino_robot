@@ -7,7 +7,7 @@ app.use(express.static('public'))
 
 #generate your own API Keys and put them in config.coffee
 
-agg_interval = 200
+agg_interval = 100
 
 @sockets  = []
 @agg      = {x: 0, y: 0, z:0}
